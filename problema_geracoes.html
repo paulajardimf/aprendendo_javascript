@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //função para pular linha
+    function pulaLinha() { 
+
+document.write('<br>');
+
+}
+
+//função com parâmetro
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+
+}
+
+var anoAtual = 2022;
+var passagemAnos = anoAtual - 1500;
+var mediaAnoGeracoes = 28
+
+mostra('Se passaram ' + passagemAnos + ' anos desde o descobrimento do Brasil.');
+mostra('Em média, estamos na ' + Math.round(passagemAnos / mediaAnoGeracoes) + 'ª geração');
+
+
+</script>

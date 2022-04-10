@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //função para pular linha
+    function pulaLinha() { 
+
+        document.write('<br>');
+
+    }
+
+    //função com parâmetro
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    var ano = 2022;
+    var idadeFlavio = (ano - 1977);
+    var idadeJoaquim = (ano - 1996);
+    var idadeBarney = (ano - 1976);
+
+    mostra("Flávio tem " + idadeFlavio + " anos");
+    mostra("Joaquim tem " + idadeJoaquim + " anos");
+    mostra("Barney tem " + idadeBarney + " anos");
+
+    var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+    document.write("A média entre as idades é " + Math.round(media))
+
+</script>
